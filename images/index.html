@@ -6,29 +6,6 @@
   <title>Shailendra Khanal | PhD Researcher | University of Mississippi</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-
-  <!-- SEO -->
-  <meta name="description" content="Shailendra Khanal is a PhD researcher in Transportation Engineering at the University of Mississippi, specializing in Alternative Intersections & Interchanges, transportation safety, and GIS-based crash research.">
-  <meta name="author" content="Shailendra Khanal">
-  <link rel="canonical" href="https://shailendrakhanal.github.io/">
-
-  <!-- Open Graph / Facebook, LinkedIn -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://shailendrakhanal.github.io/">
-  <meta property="og:title" content="Shailendra Khanal | PhD Researcher | University of Mississippi">
-  <meta property="og:description" content="PhD researcher in Transportation Engineering at Ole Miss, leading NCHRP Project 17-131 on Alternative Intersections & Interchanges. Transportation safety, GIS crash research, and roadway design.">
-  <meta property="og:image" content="https://shailendrakhanal.github.io/images/about-me.png">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Shailendra Khanal | PhD Researcher | University of Mississippi">
-  <meta name="twitter:description" content="PhD researcher in Transportation Engineering at Ole Miss, leading NCHRP Project 17-131 on Alternative Intersections & Interchanges.">
-  <meta name="twitter:image" content="https://shailendrakhanal.github.io/images/about-me.png">
   <style>
     :root {
       --navy: #0d0d14;
@@ -702,9 +679,6 @@
       transition: border-color 0.2s, background 0.2s;
       position: relative;
       overflow: hidden;
-      display: flex;
-      align-items: center;
-      gap: 16px;
     }
     .cert-card::before {
       content: '';
@@ -714,15 +688,6 @@
     }
     .cert-card:hover { border-color: rgba(206,17,38,0.4); background: rgba(206,17,38,0.04); }
     .cert-card.muted::before { background: var(--text-muted); }
-    .cert-logo {
-      width: 44px; height: 44px;
-      border-radius: 8px;
-      background: #fff;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      padding: 5px;
-    }
-    .cert-logo img { width: 100%; height: 100%; object-fit: contain; }
     .cert-name { font-size: 0.95rem; font-weight: 600; color: var(--white); margin-bottom: 4px; }
     .cert-name.muted-text { color: var(--text-muted); }
     .cert-issuer { font-size: 0.8rem; color: var(--blue-glow); }
@@ -738,8 +703,7 @@
       border-radius: 8px;
       background: rgba(206,17,38,0.15);
       display: flex; align-items: center; justify-content: center;
-      font-size: 0.95rem;
-      color: var(--blue-glow);
+      font-size: 1rem;
       flex-shrink: 0;
     }
     .award-name { font-size: 0.92rem; font-weight: 600; color: var(--white); margin-bottom: 3px; }
@@ -750,15 +714,10 @@
       padding: 14px 0;
       border-bottom: 1px solid var(--border);
     }
-    .member-logo {
-      width: 34px; height: 34px;
-      border-radius: 7px;
-      background: #fff;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      padding: 4px;
+    .member-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--blue-light); flex-shrink: 0;
     }
-    .member-logo img { width: 100%; height: 100%; object-fit: contain; }
     .member-name { font-size: 0.9rem; font-weight: 500; color: var(--white); }
     .member-role { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
 
@@ -1364,58 +1323,43 @@
       <div>
         <div class="resume-col-title">Licenses & Certifications</div>
         <div class="cert-card">
-          <div class="cert-logo"><img src="images/ms-seal.png" alt="Mississippi Board of Licensure seal"></div>
-          <div>
-            <div class="cert-name">Engineer Intern (EI) – Civil Engineering</div>
-            <div class="cert-issuer">Mississippi Board of Licensure · FE Civil Exam Passed, Mar 2024 (NCEES)</div>
-          </div>
+          <div class="cert-name">Engineer Intern (EI) – Civil Engineering</div>
+          <div class="cert-issuer">Mississippi Board of Licensure · FE Civil Exam Passed, Mar 2024 (NCEES)</div>
         </div>
         <div class="cert-card">
-          <div class="cert-logo"><img src="images/nec.png" alt="Nepal Engineering Council seal"></div>
-          <div>
-            <div class="cert-name">Civil Engineer (Category "A")</div>
-            <div class="cert-issuer">Nepal Engineering Council · Reg. No. 24560</div>
-          </div>
+          <div class="cert-name">Civil Engineer (Category "A")</div>
+          <div class="cert-issuer">Nepal Engineering Council · Reg. No. 24560</div>
         </div>
         <div class="cert-card">
-          <div class="cert-logo"><img src="images/bentley.png" alt="Bentley Systems logo"></div>
-          <div>
-            <div class="cert-name">Bentley Accredited Road Modeler: OpenRoads Modeling Core Skills</div>
-            <div class="cert-issuer">Bentley Systems · 2025</div>
-          </div>
+          <div class="cert-name">Bentley Accredited Road Modeler: OpenRoads Modeling Core Skills</div>
+          <div class="cert-issuer">Bentley Systems · 2025</div>
         </div>
         <div class="cert-card">
-          <div class="cert-logo"><img src="images/bentley.png" alt="Bentley Systems logo"></div>
-          <div>
-            <div class="cert-name">Bentley Accredited Road Designer: Road Design Modeling with OpenRoads Designer</div>
-            <div class="cert-issuer">Bentley Systems · 2024</div>
-          </div>
+          <div class="cert-name">Bentley Accredited Road Designer: Road Design Modeling with OpenRoads Designer</div>
+          <div class="cert-issuer">Bentley Systems · 2024</div>
         </div>
         <div class="cert-card muted">
-          <div class="cert-logo"><img src="images/ncees.png" alt="NCEES logo"></div>
-          <div>
-            <div class="cert-name muted-text">PE Civil (Transportation) – In Preparation</div>
-            <div class="cert-issuer muted-text">Target: Summer 2026 · NCEES</div>
-          </div>
+          <div class="cert-name muted-text">PE Civil (Transportation) – In Preparation</div>
+          <div class="cert-issuer muted-text">Target: Summer 2026 · NCEES</div>
         </div>
 
         <div class="resume-col-title" style="margin-top:36px;">Professional Memberships</div>
         <div class="member-item">
-          <div class="member-logo"><img src="images/asce.png" alt="ASCE logo"></div>
+          <div class="member-dot"></div>
           <div>
             <div class="member-name">American Society of Civil Engineers (ASCE)</div>
             <div class="member-role">Member</div>
           </div>
         </div>
         <div class="member-item">
-          <div class="member-logo"><img src="images/ite.png" alt="ITE logo"></div>
+          <div class="member-dot"></div>
           <div>
             <div class="member-name">Institute of Transportation Engineers (ITE)</div>
             <div class="member-role">Member</div>
           </div>
         </div>
         <div class="member-item">
-          <div class="member-logo"><img src="images/olemiss.svg" alt="University of Mississippi logo"></div>
+          <div class="member-dot"></div>
           <div>
             <div class="member-name">University of Mississippi SGA</div>
             <div class="member-role">Graduate Senator – Civil Engineering · 2025–Present</div>
@@ -1426,35 +1370,35 @@
       <div>
         <div class="resume-col-title">Honors & Awards</div>
         <div class="award-item">
-          <div class="award-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="award-icon">🏅</div>
           <div>
             <div class="award-name">DSITE Scholarship</div>
             <div class="award-desc">Deep South ITE (DSITE) · Awarded 2026 · Recognized at DSITE Winter Meeting, Pearl, MS</div>
           </div>
         </div>
         <div class="award-item">
-          <div class="award-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="award-icon">🏅</div>
           <div>
             <div class="award-name">Gulf Region ITS Scholarship</div>
             <div class="award-desc">Gulf Region Intelligent Transportation Society · Awarded 2026</div>
           </div>
         </div>
         <div class="award-item">
-          <div class="award-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="award-icon">🏛️</div>
           <div>
             <div class="award-name">TRB 2025 Paper Acceptance</div>
             <div class="award-desc">Transportation Research Board Annual Meeting · Winter Road Maintenance Study</div>
           </div>
         </div>
         <div class="award-item">
-          <div class="award-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="award-icon">🎓</div>
           <div>
             <div class="award-name">Merit-based Scholarship</div>
             <div class="award-desc">Top 3 ranking each semester during undergraduate studies, Nepal</div>
           </div>
         </div>
         <div class="award-item">
-          <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="award-icon">🏆</div>
           <div>
             <div class="award-name">Bureaucratic Society Welfare Award</div>
             <div class="award-desc">Ranked 74th in national scholarship competition, Nepal</div>
