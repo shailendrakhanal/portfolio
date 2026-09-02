@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shailendra Khanal | PhD Researcher | University of Mississippi</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
     :root {
       --navy: #0d0d14;
@@ -501,7 +502,11 @@
       border-radius: 100px;
       font-size: 0.78rem;
       font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
     }
+    .chip i { font-size: 0.85rem; }
     .chip-solid { background: rgba(206,17,38,0.2); border: 1px solid rgba(206,17,38,0.4); color: var(--blue-glow); }
     .chip-outline { background: transparent; border: 1px solid rgba(65,105,168,0.35); color: #6b92cc; }
 
@@ -577,8 +582,21 @@
       padding: 20px 24px;
       margin-bottom: 16px;
       transition: border-color 0.2s;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
     }
     .edu-item:hover { border-color: rgba(206,17,38,0.4); }
+    .edu-logo {
+      width: 52px; height: 52px;
+      border-radius: 10px;
+      background: #fff;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      padding: 6px;
+    }
+    .edu-logo img { width: 100%; height: 100%; object-fit: contain; }
     .edu-degree { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 4px; }
     .edu-school { font-size: 0.85rem; color: var(--blue-glow); margin-bottom: 4px; }
     .edu-meta { font-size: 0.78rem; color: var(--text-muted); }
@@ -1059,7 +1077,7 @@
         <p class="hero-desc">Specializing in Alternative Intersections & Interchanges (AII), transportation safety analysis, and GIS-based crash research. Leading NCHRP Project 17-131 — developing national guidance for safer, smarter intersection design.</p>
         <div class="hero-actions">
           <a href="#research" class="btn-primary">View Research →</a>
-          <a href="https://www.linkedin.com/in/shailendra-khanal/" class="btn-secondary" target="_blank">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/shailendra-khanal/" class="btn-secondary" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn ↗</a>
           <a href="https://orcid.org/0009-0008-0270-0699" class="btn-secondary" target="_blank">ORCID ↗</a>
         </div>
       <div class="hero-stats">
@@ -1138,31 +1156,31 @@
           <div class="skill-group">
             <div class="skill-group-label">Engineering & Design</div>
             <div class="skill-chips">
-              <span class="chip chip-solid">AutoCAD Civil 3D</span>
-              <span class="chip chip-solid">OpenRoads Designer</span>
-              <span class="chip chip-solid">MicroStation</span>
-              <span class="chip chip-solid">Synchro</span>
+              <span class="chip chip-solid"><i class="fa-solid fa-drafting-compass"></i>AutoCAD Civil 3D</span>
+              <span class="chip chip-solid"><i class="fa-solid fa-road"></i>OpenRoads Designer</span>
+              <span class="chip chip-solid"><i class="fa-solid fa-building"></i>MicroStation</span>
+              <span class="chip chip-solid"><i class="fa-solid fa-traffic-light"></i>Synchro</span>
             </div>
           </div>
           <div class="skill-group">
             <div class="skill-group-label">Programming & Data</div>
             <div class="skill-chips">
-              <span class="chip chip-outline">Python (Advanced)</span>
-              <span class="chip chip-outline">R (Advanced)</span>
-              <span class="chip chip-outline">SPSS</span>
-              <span class="chip chip-outline">MATLAB</span>
-              <span class="chip chip-outline">Excel (Advanced)</span>
+              <span class="chip chip-outline"><i class="fa-brands fa-python"></i>Python (Advanced)</span>
+              <span class="chip chip-outline"><i class="fa-brands fa-r-project"></i>R (Advanced)</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-chart-simple"></i>SPSS</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-square-root-variable"></i>MATLAB</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-file-excel"></i>Excel (Advanced)</span>
             </div>
           </div>
           <div class="skill-group">
             <div class="skill-group-label">GIS & Standards</div>
             <div class="skill-chips">
-              <span class="chip chip-outline">ArcGIS Pro</span>
-              <span class="chip chip-outline">QGIS</span>
-              <span class="chip chip-outline">AASHTO</span>
-              <span class="chip chip-outline">MUTCD</span>
-              <span class="chip chip-outline">FHWA</span>
-              <span class="chip chip-outline">HCM Analysis</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-map-location-dot"></i>ArcGIS Pro</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-earth-americas"></i>QGIS</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-book"></i>AASHTO</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-book"></i>MUTCD</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-flag-usa"></i>FHWA</span>
+              <span class="chip chip-outline"><i class="fa-solid fa-chart-line"></i>HCM Analysis</span>
             </div>
           </div>
         </div>
@@ -1220,19 +1238,28 @@
       <div class="reveal-right">
         <div class="resume-col-title">Education</div>
         <div class="edu-item">
-          <div class="edu-degree">PhD, Civil Engineering (Transportation Systems)</div>
-          <div class="edu-school">University of Mississippi (Ole Miss)</div>
-          <div class="edu-meta">Aug 2025 – Present · Oxford, MS · Research: AII Design & Safety</div>
+          <div class="edu-logo"><img src="images/olemiss.svg" alt="University of Mississippi logo"></div>
+          <div>
+            <div class="edu-degree">PhD, Civil Engineering (Transportation Systems)</div>
+            <div class="edu-school">University of Mississippi (Ole Miss)</div>
+            <div class="edu-meta">Aug 2025 – Present · Oxford, MS · Research: AII Design & Safety</div>
+          </div>
         </div>
         <div class="edu-item">
-          <div class="edu-degree">MS, Civil Engineering (Transportation)</div>
-          <div class="edu-school">Utah State University</div>
-          <div class="edu-meta">Aug 2023 – Aug 2025 · GPA: 3.75 / 4.0 · Logan, UT<br>Thesis: Public Satisfaction with Winter Road Maintenance in Utah<br>GRE: Quant 167 · Verbal 147</div>
+          <div class="edu-logo"><img src="images/usu.svg" alt="Utah State University logo"></div>
+          <div>
+            <div class="edu-degree">MS, Civil Engineering (Transportation)</div>
+            <div class="edu-school">Utah State University</div>
+            <div class="edu-meta">Aug 2023 – Aug 2025 · GPA: 3.75 / 4.0 · Logan, UT<br>Thesis: Public Satisfaction with Winter Road Maintenance in Utah<br>GRE: Quant 167 · Verbal 147</div>
+          </div>
         </div>
         <div class="edu-item">
-          <div class="edu-degree">BE, Civil Engineering</div>
-          <div class="edu-school">Tribhuvan University (Kathmandu Engineering College)</div>
-          <div class="edu-meta">2015 – 2019 · Kathmandu, Nepal · 80.59% — Distinction</div>
+          <div class="edu-logo"><img src="images/tu.png" alt="Tribhuvan University logo"></div>
+          <div>
+            <div class="edu-degree">BE, Civil Engineering</div>
+            <div class="edu-school">Tribhuvan University (Kathmandu Engineering College)</div>
+            <div class="edu-meta">2015 – 2019 · Kathmandu, Nepal · 80.59% — Distinction</div>
+          </div>
         </div>
 
         <div class="resume-col-title" style="margin-top:40px;">Research Interests</div>
@@ -1434,35 +1461,35 @@
     <div class="contact-grid">
       <div class="contact-cards">
         <a href="mailto:skhanal1@go.olemiss.edu" class="contact-card">
-          <div class="contact-icon">✉️</div>
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
           <div>
             <div class="contact-label">Email</div>
             <div class="contact-value">skhanal1@go.olemiss.edu</div>
           </div>
         </a>
         <a href="tel:+14352946220" class="contact-card">
-          <div class="contact-icon">📞</div>
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
           <div>
             <div class="contact-label">Phone</div>
             <div class="contact-value">+1 (435) 294-6220</div>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/shailendra-khanal/" class="contact-card" target="_blank">
-          <div class="contact-icon">💼</div>
+          <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
           <div>
             <div class="contact-label">LinkedIn</div>
             <div class="contact-value">linkedin.com/in/shailendra-khanal</div>
           </div>
         </a>
         <a href="https://orcid.org/0009-0008-0270-0699" class="contact-card" target="_blank">
-          <div class="contact-icon">🔬</div>
+          <div class="contact-icon"><i class="fa-brands fa-orcid"></i></div>
           <div>
             <div class="contact-label">ORCID</div>
             <div class="contact-value">0009-0008-0270-0699</div>
           </div>
         </a>
         <div class="contact-card" style="cursor:default;">
-          <div class="contact-icon">📍</div>
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
           <div>
             <div class="contact-label">Location</div>
             <div class="contact-value">Oxford, Mississippi</div>
